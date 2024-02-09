@@ -9,7 +9,6 @@ from streamlit_extras.grid import grid
 import plotly.graph_objects as go
 
 import os
-os.chdir(r"C:\Users\Thiago Jose\Desktop\CODIGO.PY\Aulas-curso\DATABASE-FINANÇAS")
 import requests
 import urllib.request
 
@@ -28,7 +27,7 @@ hr_css = """
     """
 def build_sidebar(width=60):
     # st.image("Investimentos_controle/Dashboard/logo-250-100-transparente.png")## colocar logo
-    ticker_list = pd.read_csv(r'C:\Users\Thiago Jose\Desktop\CODIGO.PY\Investimentos_controle\Dashboard\tickers_ibra.csv', index_col=0)
+    ticker_list = pd.read_csv(r'/workspaces/Stock_Dashboard/tickers_ibra.csv', index_col=0)
 
     tickers = st.multiselect(label='Selecione as empresas', options=ticker_list)
 
@@ -38,14 +37,14 @@ def build_sidebar(width=60):
 
 
     if tickers:
-        prices = yf.download(tickers, start=start_date, end_date=end_date)['Adj Close']
+        prices = yf.download(tickers, start=start_date, end=end_date)['Adj Close']
         if len(tickers) == 1:
             prices = prices.to_frame()
             prices.columns = [tickers[0].rstrip(".SA")]
             
         cdi = getting_CDI(start_date,end_date)
         prices.columns = prices.columns.str.rstrip(".SA")
-        prices['IBOV'] = yf.download("^BVSP", start_date=start_date, end=end_date)['Adj Close']
+        prices['IBOV'] = yf.download("^BVSP", start=start_date, end=end_date)['Adj Close']
 
         return tickers, prices, cdi
 
