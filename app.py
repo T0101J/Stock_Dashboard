@@ -27,7 +27,7 @@ hr_css = """
     """
 def build_sidebar(width=60):
     # st.image("Investimentos_controle/Dashboard/logo-250-100-transparente.png")## colocar logo
-    ticker_list = pd.read_csv(r'/workspaces/Stock_Dashboard/tickers_ibra.csv', index_col=0)
+    ticker_list = pd.read_csv(r'tickers_ibra.csv', index_col=0)
 
     tickers = st.multiselect(label='Selecione as empresas', options=ticker_list)
 
