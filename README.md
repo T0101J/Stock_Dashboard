@@ -2,6 +2,7 @@
 Dashboard interativo feito com Streamlit 
 
 ## 🚀 Começando
+Link do dashboard online: [Link](https://dashboard-acoes.streamlit.app/#548d0a45) - Link
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
