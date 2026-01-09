@@ -3,6 +3,7 @@ anyio==4.2.0
 appdirs==1.4.4
 attrs==23.2.0
 beautifulsoup4==4.12.3
+lightgbm==2.4.0
 blinker==1.7.0
 cachetools==5.3.2
 certifi==2023.11.17
@@ -84,4 +85,5 @@ validators==0.22.0
 watchdog==3.0.0
 webencodings==0.5.1
 yfinance
+
 zipp==3.17.0
