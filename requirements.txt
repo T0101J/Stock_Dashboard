@@ -11,7 +11,7 @@ certifi==2023.11.17
 charset-normalizer==3.3.2
 click==8.1.7
 contourpy==1.2.0
-python-bcb==0.3.3
+python-bcb==0.1.8
 cycler==0.12.1
 entrypoints==0.4
 exceptiongroup==1.2.0
@@ -88,6 +88,7 @@ webencodings==0.5.1
 yfinance
 
 zipp==3.17.0
+
 
 
 
