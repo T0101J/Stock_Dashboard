@@ -1,5 +1,4 @@
-python==3.11
-rich==10.14.0
+rich==13.9.4
 lightgbm==4.6.0 
 ta==0.11.0
 python-bcb==0.1.8
@@ -20,6 +19,7 @@ streamlit-vertical-slider==2.5.5
 toml==0.10.2
 urllib3==2.1.0
 yfinance==1.0
+
 
 
 
