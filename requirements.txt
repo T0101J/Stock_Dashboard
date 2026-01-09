@@ -1,4 +1,5 @@
 rich==13.9.4
+scikit-learn-1.8.0
 lightgbm==4.6.0 
 ta==0.11.0
 python-bcb==0.1.8
@@ -19,6 +20,7 @@ streamlit-vertical-slider==2.5.5
 toml==0.10.2
 urllib3==2.1.0
 yfinance==1.0
+
 
 
 
